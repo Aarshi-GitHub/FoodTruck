@@ -8,7 +8,7 @@ const LatestArticles = () => {
     const totalPages = Math.ceil(data.length / 3);
     useEffect(() => {
         cardDisplay();
-    }, [page]);
+    }, [page,cards]);
 
     const nextPage = () => {
         if (page + 1 > totalPages) return;
