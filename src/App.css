@@ -6,6 +6,8 @@
   display: flex;
   width: 100%;
   max-width: 100%;
+  height : fit-content;
+  margin-bottom:10%;
 }
 
 .landingPage .landingPageHeading{
@@ -131,7 +133,7 @@
 }
 
 .latestArticles{
-  height: 115vh;
+  height: fit-content;
   margin-left:6%;
 }
 
@@ -150,7 +152,7 @@
 }
 
 .card{
-  height : 74vh;
+  height : fit-content;
   width : 27%;
   padding: 2% 2%;
   border : 1px solid rgb(214 220 238);
