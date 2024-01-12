@@ -1,38 +1,508 @@
-.App {
-  text-align: center;
+*{
+  margin : 0px;
+  padding : 0px;
+}
+.landingPage{
+  display: flex;
+  width: 100%;
+  max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landingPage .landingPageHeading{
+  padding-left : 7vw;
+  padding-top : 20px;
+  width : 27%;
+  min-width: 400px;
+}
+.landingPage .landingPageHeading h1{
+  margin-top : 17vh;
+  font-size : 68px;
+  font-weight: bolder;
+  color: rgb(14 35 104);
+  line-height: 75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landingPage .landingPageHeading p{
+  margin-top : 5vh;
+  font-size : 20px;
+  color : rgb(68 73 87);
+  line-height : 30px;
+}
+.landingPage .landingPageHeading button{
+  background-color: rgb(226 55 68);
+  border: none;
+  border-radius : 40px;
+  margin-top : 7vh;
+  font-size : 20px;
+  color : white;
+  height : 70px;
+  padding : 10px 20px;
+  width : 220px;
+  font-weight: 550;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landingPage .landingPageHeading span{
+  color : rgb(226 55 68);
+
+}
+
+.landingPage .foodTruckLogo{
+  height : 90px;
+  width : 120px;
+}
+
+
+.landingPage .landingPageImage{
+  position : relative;
+  margin-left: auto;
+  height : 120vh;
+}
+
+.landingPage .landingPageImage .frame{
+  position: absolute;
+  left : 0;
+  top : 0;
+  margin-left:-18px;
+  margin-top:-1px;
+  margin-bottom: 1px;
+}
+
+.landingPage .landingPageImage .getInTouch{
+  position: absolute;
+  right : 0;
+  margin-right: 18px;
+  border : 1px solid white;
+  background-color: rgb(226 55 68);
+  color : white;
+  border-radius : 40px;
+  margin-top : 30px;
+  font-size : 17px;
+  height : 50px;
+  padding : 5px 10px;
+  width : 130px;
+  font-weight: 540;
+  cursor: pointer;
+}
+
+.aboutUs{
+  height : 100vh;
+  display: flex;
+  align-items: center; 
+}
+.aboutUs .aboutUs-container{
+  height:70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(246 247 249);
+}
+
+.aboutUs .aboutUs-container img{
+  height: 100%;
+}
+
+.aboutUs .aboutUs-container .aboutText{
+  width : 31%;
+}
+.aboutUs .aboutUs-container .aboutText h1{
+  color : rgb(14 35 104);
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.aboutUs .aboutUs-container .aboutText p{
+  color : rgb(68 73 87);
+  font-size: 18px;
+  line-height: 30px;
+}
+.aboutUs .aboutUs-container .aboutText button{
+  background-color : rgb(226 55 68);
+  color: white;
+  border : none;
+  border-radius : 40px;
+  margin-top : 7vh;
+  font-size : 18px;
+  height : 50px;
+  padding : 5px 20px;
+  width : 160px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.latestArticles{
+  height: 115vh;
+  margin-left:6%;
+}
+
+.latestArticles h1{
+  color : rgb(14 35 104);
+  font-size: 60px;
+  font-weight:600;
+  margin-bottom:50px;
+  margin-right: auto;
+}
+
+.latestArticles .cardsContainer{
+  display: flex;
+  width : 92%;
+  justify-content: space-between;
+}
+
+.card{
+  height : 74vh;
+  width : 27%;
+  padding: 2% 2%;
+  border : 1px solid rgb(214 220 238);
+  border-radius: 20px;
+}
+
+.card img{
+  width : 95%;
+  margin: auto;
+}
+
+.card h2{
+  color : rgb(14 35 104);
+  font-size: 24px;
+  margin: 20px 5px;
+}
+
+.card p{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.card button{
+  color: rgb(66 73 97);
+  border : 2px solid rgb(66 73 97);
+  background-color: white;
+  border-radius : 40px;
+  margin-top : 30px;
+  font-size : 17px;
+  height : 50px;
+  padding : 5px 10px;
+  width : 130px;
+  font-weight: 540;
+  cursor: pointer;
+}
+
+.latestArticles .navigation{
+  margin: auto;
+  width: fit-content;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.latestArticles .navigation button{
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color : rgb(66 73 97);
+  border : 1px solid rgb(66 73 97);
+  border-radius: 30%;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contact{
+  height : 55vh;
+  background-color: rgb(248 248 248);
+  width : 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact > div{
+  width : 18%;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.contact p{
+  margin-top : 15px;
+  margin-bottom: 15px;
+}
+
+.contact h2{
+  color : rgb(14 35 104);
+  font-size: 20px;
+  font-weight : 600;
+  margin-bottom:10px;
+}
+
+.contact .logo img{
+  height : 150px;
+}
+
+.contact .icons{
+  color : rgb(14 35 104);
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact .icons i{
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.contact .socialCopy{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  height : 65%;
+}
+.contact .socialCopy>div{
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media only screen and (max-width: 900px) {
+  .landingPage{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .landingPage .landingPageHeading{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .landingPage .landingPageHeading h1{
+    font-size: 45px;
+    justify-content: center;
+    line-height: 58px;
+    width : 70%;
+    margin: auto;
   }
+
+  .landingPage .landingPageHeading p{
+    font-size : 18px;
+    color : rgb(68 73 87);
+    line-height : 30px;
+    width : 80%;
+    margin: auto;
+    margin-top : 5vh;
+  }
+
+  .landingPage .landingPageHeading .foodTruckLogo{
+    display: none;
+  }
+
+  .landingPage .landingPageImage{
+    width: 100%;
+    position : relative;
+    margin-left: auto;
+    height: 100vh;
+  }
+
+  .landingPage .landingPageImage .getInTouch{
+    position: absolute;
+    right : 0;
+    margin-right: 10px;
+    border : 1px solid white;
+    background-color: rgb(226 55 68);
+    color : white;
+    border-radius : 40px;
+    margin-top : 20px;
+    font-size : 14px;
+    height : 30px;
+    padding : 5px 10px;
+    width : 110px;
+    font-weight: 540;
+    cursor: pointer;
+  }
+
+  .landingPage .landingPageImage .pizzaImg{
+    width: 100%;
+    height: 95vh;
+    margin: 0;
+  }
+
+  .landingPage .landingPageImage .frame{
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .landingPage .landingPageHeading button{
+    border-radius : 40px;
+    margin : 7vh auto;
+    font-size : 18px;
+    height : 55px;
+    padding : 10px 20px;
+    width : 180px;
+    font-weight: 550;
+    cursor: pointer;
+  }
+
+  .aboutUs{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(246 247 249);
+  }
+
+  .aboutUs .aboutUs-container{
+    width: 80%;
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+  }
+  .aboutUs .aboutUs-container img{
+    display: none;
+  }
+  .aboutUs .aboutUs-container .aboutText{
+    width : 90%;
+  }
+  .aboutUs .aboutUs-container .aboutText h1{
+    color : rgb(14 35 104);
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .aboutUs .aboutUs-container .aboutText p{
+    color : rgb(68 73 87);
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .aboutUs .aboutUs-container .aboutText button{
+    border-radius : 40px;
+    margin-top : 7vh;
+    font-size : 16px;
+    height : 45px;
+    padding : 5px 20px;
+    width : 120px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .latestArticles{
+    height: fit-content;
+    width: 100%;
+  }
+  .latestArticles h1{
+    color : rgb(14 35 104);
+    font-size: 40px;
+    font-weight:600;
+    margin-top: 20px;
+    margin-bottom:40px;
+    margin-right: auto;
+  }
+  .latestArticles .cardsContainer{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width : 90%;
+    justify-content: space-between;
+  }
+  .card{
+    height : fit-content;
+    width : 90%;
+    padding: 5% 2%;
+    border : 1px solid rgb(214 220 238);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .card h2{
+    color : rgb(14 35 104);
+    font-size: 20px;
+    margin: 8px 5px;
+  }
+  .card p{
+    font-size: 16px;
+    line-height: 25px;
+    width: 90%;
+    margin: auto;
+  }
+  .card button{
+    border-radius : 30px;
+    margin-top : 30px;
+    font-size : 15px;
+    height : 40px;
+    padding : 5px 8px;
+    width : 130px;
+    font-weight: 540;
+    cursor: pointer;
+  }
+  .latestArticles .navigation{
+    margin: auto;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+  .latestArticles .navigation button{
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 14px;
+  }
+  .contact{
+    height : fit-content;
+    width : 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .contact > div{
+    width : 90%;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  
+  .contact p{
+    margin-top : 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  
+  .contact h2{
+    color : rgb(14 35 104);
+    font-size: 18px;
+    font-weight : 600;
+    margin-bottom:10px;
+  }
+
+  .contact .logo{
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .contact .logo img{
+    height : 50px;
+  }
+  
+  .contact .icons{
+    font-size: 16px;
+  }
+  
+  .contact .socialCopy{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .contact .socialCopy>div>h2{
+    display: none;
+  }
+  .contact .socialCopy .copyright{
+    font-size: 12px;
+    margin-bottom: 3%;
+  }
+  
 }
